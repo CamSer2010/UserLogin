@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="UserLogin" extends="Scene"> 
+<script type="text/brightscript" uri="mainScene.brs" />
+	<children>
+
+    <layoutGroup
+      id = "layoutGroup"
+      translation = "[640,40]"
+      layoutDirection = "vert"
+      horizAlignment = "center"
+      vertAlignment = "vert"
+      itemSpacings = "[35]">
+
+      <SimpleLabel 
+        id = "labelWelcome" 
+        visible = "true"
+        text = "Welcome!"
+        color = "0xFFC300"
+        fontUri = "font:BoldSystemFontFile"
+        fontSize = "[50]"/>
+
+      <textEditBox
+        id = "userTextEditBox"
+        width = "370"
+        height = "50"
+        hintText = " Username"
+        clearOnDownKey = "false"
+        hintTextColor = "0xFFC300"
+        opacity = "0.5"
+        backgrounduri = "pkg:/images/greyfont.png"/>
+
+      
+      <textEditBox
+        id = "passwordTextEditBox"
+        width = "370"
+        height = "50"
+        hintText = " Password"
+        clearOnDownKey = "false"
+        hintTextColor = "0xFFC300"
+        opacity = "0.5"
+        secureMode = "true"
+        backgrounduri = "pkg:/images/greyfont.png"/>
+
+      <button
+        id = "loginButton"
+        text = "Login"
+        textFont = "font:MediumSystemFont"
+        textColor = "0xFFC300"/>
+
+
+      <label
+        id = "signUpLabel"
+        visible = "true"
+        text = "Create an account"
+        color = "0xFFC300"
+        fontUri = "font:SmallSystemFont"/>
+
+      <label
+        id = "forgetLabel"
+        visible = "true"
+        text = "Forget your password?"
+        color = "0xFFC300"
+        fontUri = "font:SmallSystemFont"/>
+
+    </layoutGroup>
+
+    <keyboard
+      id = "userKeyboard"
+      visible = "false"
+      active = "true"
+      showTextEditBox = "false"
+      translation = "[175,400]"/>
+
+    <miniKeyboard
+      id = "passwordKeyboard"
+      visible = "false"
+      active = "true"
+      width = "200"
+      height = "200"
+      showTextEditBox = "false"
+      translation = "[446,300]"/>
+
+    </children>
+
+</component>
